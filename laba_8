@@ -1,0 +1,51 @@
+// 1
+#include <iostream>
+using namespace std;
+int main() {
+	float x;
+	cout << "размер файла в байтах: ";
+	cin >> x;
+	int x1 = x / 1024;
+	cout << "количество полных килобайтов, которые занимает данный файл" << x1;
+}
+// 2
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B;
+	cout << "A и B (A > B): ";
+	cin >> A >> B;
+	cout << "количество отрезков B, размещенных на отрезке A." << floor(A / B);
+}
+// 3
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B;
+	cout << "A и B (A > B): ";
+	cin >> A >> B;
+	cout << "длинa незанятой части отрезка A:" << A - B;
+}
+// 4
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B;
+	cout << "двузначное число";
+	cin >> A;
+	B = A % 10 * 10;
+	B = B + A / 10;
+	cout << "число, полученное при перестановке цифр исходного числа:" << B;
+}
+// 5
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B, C;
+	cout << "трехзначное число";
+	cin >> A;
+	B = A / 100;
+	C = A % 100 * 10;
+	B = C + B;
+	cout <<"Результат: " << B;
+}
