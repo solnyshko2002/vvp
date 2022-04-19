@@ -1,0 +1,74 @@
+// 1
+#include <iostream>
+#include <locale.h>
+using namespace std;
+int main() {
+    float x1, y1, x2, y2;
+    setlocale(LC_ALL, "Russian");
+    cout<<"Введите координаты: "<<"\nx1 = ";    cin >> x1;
+    cout << "y1 = ";    cin >> y1;
+    cout << "x2 = ";    cin >> x2;
+    cout << "y2 = ";    cin >> y2;
+    cout << "Расстояние между двумя точками = "<<pow((pow((x2 - x1), 2) + pow((y2 - y1), 2)), 0.5);
+    return 0;
+}
+// 2
+#include <iostream>
+#include <locale.h>
+using namespace std;
+int main() {
+    float A, B, C;
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите координаты: " << "\nА = ";    cin >> A;
+    cout << "В = ";    cin >> B;
+    cout << "С = ";    cin >> C;
+    cout << "АС = " << abs(A - C) << " BC = " << abs(B - C) << " AC + BC = " << abs(B - C) + abs(A - C);
+    return 0;
+}
+// 3
+#include <iostream>
+#include <locale.h>
+using namespace std;
+int main() {
+    float A, B, C;
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите координаты: " << "\nА = ";    cin >> A;
+    cout << "В = ";    cin >> B;
+    cout << "С = ";    cin >> C;
+    cout << "AC*BC = " << abs(B - C) * abs(A - C);
+    return 0;
+}
+// 4
+#include <iostream>
+#include <locale.h>
+using namespace std;
+int main() {
+    float x1, y1, x2, y2;
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите координаты: " << "\nx1 = ";    cin >> x1;
+    cout << "y1 = ";    cin >> y1;
+    cout << "x2 = ";    cin >> x2;
+    cout << "y2 = ";    cin >> y2;
+    cout << "Периметр = " << 2 * abs(y1 - y2) + 2 * abs(x1 - x2) << " Площадь = " << abs(y1 - y2) * abs(x1 - x2);
+    return 0;
+}
+// 5
+#include <iostream>
+#include <locale.h>
+using namespace std;
+int main() {
+    float x1, y1, x2, y2, x3, y3, a, b, c, p;
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите координаты: " << "\nx1 = ";    cin >> x1;
+    cout << "y1 = ";    cin >> y1;
+    cout << "x2 = ";    cin >> x2;
+    cout << "y2 = ";    cin >> y2;
+    cout << "x3 = ";    cin >> x3;
+    cout << "y3 = ";    cin >> y3;
+    a = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+    b = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
+    c = sqrt(pow((x1 - x3), 2) + pow((y1 - y3), 2));
+    p = (a + b + c) / 2;
+    cout << "Периметр = " << a + b + c << " Площадь = " << sqrt(p * (p - a) * (p - b) * (p - c));
+    return 0;
+}
