@@ -1,0 +1,26 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+int main()
+{
+	double a, b, c;
+	char op;
+	int q = 0;
+	do
+	{
+		cout << "\tВведите а, операцию, b:";
+		cin >> a >> op >> b;
+		switch (op)
+		{
+		case '+': c = a + b; break;
+		case '-': c = a - b; break;
+		case '*': c = a * b; break;
+		case '/': c = a / b; break;
+		default:
+			cout << "Не корректный ввод";
+		}
+		cout << "Результат: " << c;
+		cout << "\tНажмите \"1\",чтобы продолжить и \"0\", чтобы выйти";
+		cin >> q;
+	} while (q != 0);
+}
