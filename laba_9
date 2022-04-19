@@ -1,0 +1,97 @@
+// 1
+#include <iostream>
+using namespace std;
+int main() {
+	int N;
+	cin >> N;
+	N = N % 60;
+	cout << N;
+}
+// 2
+#include <iostream>
+using namespace std;
+int main() {
+	int K;
+	setlocale(LC_ALL, "Russian");
+	cin >> K;
+	while (K >= 7) {
+		K -= 7;
+	}
+	if (K == 6) {
+		cout << "суббота";
+	}
+	if (K == 5) {
+		cout << "пятница";
+	}
+	if (K == 4) {
+		cout << "четверг";
+	}
+	if (K == 3) {
+		cout << "среда";
+	}
+	if (K == 2) {
+		cout << "вторник";
+	}
+	if (K == 1) {
+		cout << "понедельник";
+	}
+	if (K == 0) {
+		cout << "воскресенье";
+	}
+}
+// 3
+#include <iostream>
+using namespace std;
+int main() {
+	int K, N;
+	setlocale(LC_ALL, "Russian");
+	cin >> K >> N;
+	K += N - 1;
+	while (K > 7) {
+		K -= 7;
+	}
+	if (K == 6) {
+		cout << "суббота";
+	}
+	if (K == 5) {
+		cout << "пятница";
+	}
+	if (K == 4) {
+		cout << "четверг";
+	}
+	if (K == 3) {
+		cout << "среда";
+	}
+	if (K == 2) {
+		cout << "вторник";
+	}
+	if (K == 1) {
+		cout << "понедельник";
+	}
+	if (K == 7) {
+		cout << "воскресенье";
+	}
+}
+// 4
+#include <iostream>
+using namespace std;
+int main() {
+	float N, S, B, C, A;
+	cin >> A >> B >> C;
+	N = floor(B / C) * floor(A / C);
+	S = A * B - pow(C, 2) * (floor(B / C) * floor(A / C));
+	cout << N << S;
+}
+// 5
+#include <iostream>
+using namespace std;
+int main() {
+	int N, S;
+	cin >> N;
+	if (N % 100 > 0) {
+		cout << N / 100 + 1;
+	}
+	else {
+		cout << N / 100;
+	}
+}
