@@ -1,0 +1,61 @@
+// 1
+#include <iostream>
+using namespace std;
+int main() {
+	float a;
+	cout << "α грабусов = "; cin >> a;
+	cout << "Радианы: " << a / 180;
+	return 0;
+}
+// 2
+#include <iostream>
+using namespace std;
+int main() {
+	float a;
+	cout << "Радианы = "; cin >> a;
+	cout << "α грабусов = " << a * 180;
+	return 0;
+}
+// 3
+#include <iostream>
+using namespace std;
+int main() {
+	float a, x, v, y;
+	cout << "Введите Х кг конфет и А рублей - цена: "; cin >> x >> a;
+	v = a / x;
+	cout << "1 кг: " << v<<"\nY = ";
+	cin >> y;
+	a = v * y;
+	cout << y <<" кг стоит "<< a;
+	return 0;
+}
+// 4
+#include <iostream>
+using namespace std;
+int main() {
+	float v1, v2, S, T;
+	cout << "v1,v2,S,T: "; cin >> v1 >> v2 >> S >> T;
+	cout << "Расстояние = " << S + v1 * T + v2 * T;
+	return 0;
+}
+// 5
+#include <iostream>
+using namespace std;
+int main() {
+	float A, B, x;
+	cout << "Введите А и В для Ах+В=0: "; cin >> A >> B;
+	cout <<"x = " << x - B / A;
+	return 0;
+}
+// 6
+#include <iostream>
+using namespace std;
+int main() {
+	float A1, B1, C1, A2, B2, C2, x, y;
+	cout << "Введите коэфиценты для А1х+В1y=C1, А2х+В2y=C2: ";
+	cin >> A1 >> B1 >> C1 >> A2 >> B2 >> C2;
+	y = (((C1 * A2) - (C2 * A1)) / ((B1 * A2) - (A1 * B2)));
+	x = (C1 - B1 * y) / A1;
+	cout <<"x = " << x <<" y = " << y;
+	return 0;
+}
